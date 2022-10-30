@@ -6,10 +6,10 @@ namespace CashRegister
 	{
 		private readonly Printer printer;
 
-		public CashRegister()
-		{
-			printer = new Printer();
-		}
+		public CashRegister(Printer printer)
+        {
+            this.printer = printer;
+        }
 
 		public void Process(Purchase purchase)
 		{
